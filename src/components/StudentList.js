@@ -13,10 +13,12 @@ export default function StudentList(props) {
   }, []);
 
   let getStudents = () => {
+
     axios
       .get("http://localhost:8080/listStudents")
       .then((response) => setStudents(response.data))
       .catch((error) => alert(error));
+
   };
 
   let deleteStudent = (studentId) => {

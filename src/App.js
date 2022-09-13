@@ -28,6 +28,7 @@ function App() {
         <MyAlert alert={alert} />
         <Container>
           <Routes>
+
             <Route path="student" element={<Student showAlert={showAlert} />} />
             <Route
               path="student/:studentId"
@@ -37,6 +38,7 @@ function App() {
               path="listStudents"
               element={<StudentList showAlert={showAlert} />}
             />
+
           </Routes>
         </Container>
         <Footer />

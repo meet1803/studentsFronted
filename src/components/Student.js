@@ -75,6 +75,8 @@ export default function Student(props) {
               <strong>{studentId!=null? "Update Student Information":"Add Student Information"}</strong>
             </Card.Header>
             <Card.Body>
+
+
               <Form.Group className="mb-3">
                 <Form.Label>Id</Form.Label>
                 <Form.Control
